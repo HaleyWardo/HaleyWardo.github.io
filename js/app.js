@@ -3,7 +3,7 @@ let selectedIndex = 0;
 
 const projects = [
   {
-    src : "./images/portfolio-thumbnails/project-5-thumbnail.PNG",
+    src : "./images/thumbnails/project-5-thumbnail.png",
     alt: "project 5",
     title: "Build a Web Style Guide",
     description: "Learned the fundamentals of Sass. I created a style guide from the ground up using variables, mixins, and functions.",
@@ -12,7 +12,7 @@ const projects = [
     ],
   },
   {
-    src : "./images/portfolio-thumbnails/project-6-thumbnail.PNG",
+    src : "./images/thumbnails/project-6-thumbnail.png",
     alt: "project 6",
     title: "Interactive Video Player",
     description: "Used a video API and JavaScript to highlight the captions from the video as it was playing. Also, if user selects a section of text, it will auto play from the selection.",
@@ -21,7 +21,7 @@ const projects = [
     ],
   },
   {
-    src : "./images/portfolio-thumbnails/project-8-thumbnail.PNG",
+    src : "./images/thumbnails/project-8-thumbnail.png",
     alt: "project 8",
     title: "SVG Animations",
     description: "Learned how to modify styles on SVG's and animate them. Learned CSS transitions and transforms and incorporating it into the project.",
@@ -30,7 +30,7 @@ const projects = [
     ],
   },
   {
-    src : "./images/portfolio-thumbnails/project-9-thumbnail.PNG",
+    src : "./images/thumbnails/project-9-thumbnail.png",
     alt: "project 9",
     title: "Web App Dashboard",
     description: "Used Chart.js to create line, bar, and pie charts. Used Randomuser.com to generate random users. Used local storage to save user changes. Created modals for alert messages and notifications.",
@@ -39,7 +39,7 @@ const projects = [
     ],
   },
   {
-    src : "./images/portfolio-thumbnails/project-10-thumbnail.PNG",
+    src : "./images/thumbnails/project-10-thumbnail.png",
     alt: "project 10",
     title: "Employee Directory using Public API",
     description: "Used Random user API to generate random users and generate their details. Clicking a user would pop up a modal for additional information. Popup would include previous and next arrows to display next member.",
@@ -48,7 +48,7 @@ const projects = [
     ],
   },
   {
-    src : "./images/portfolio-thumbnails/project-11-thumbnail.PNG",
+    src : "./images/thumbnails/project-11-thumbnail.png",
     alt: "project 11",
     title: "Flickr Gallery with React",
     description: "Used react to create an app that interacts with the Flickr API. It displays images from the API based on user input or pre-defined options.",
