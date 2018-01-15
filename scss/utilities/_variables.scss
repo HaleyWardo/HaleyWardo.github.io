@@ -1,0 +1,55 @@
+///////////////
+///VARIABLES///
+///////////////
+
+// ===============================================
+// =================FONTS=========================
+// FONT STACKS
+$font-url      :  "https://fonts.googleapis.com/css?family=Great+Vibes|Raleway:300,400,700";
+$raleway :  'Raleway', sans-serif;
+$cursive :  'Great Vibes', cursive;
+
+// FONT WEIGHT
+
+$font-wt-thin        : 100;
+$font-wt-light       : 300;
+$font-wt-regular     : 400;
+$font-wt-bold        : 700;
+$font-wt-bolder      : 900;
+
+// FONT SIZE
+
+$base-font-size: 16px;
+
+// ===============================================
+// =================COLORS========================
+$white         :#FFF;
+$grey          :#808080;
+$black         :#181616;
+
+// THEME COLORS
+$light-blue    :#ade1e8;
+$maroon        :#933e3d;
+$charcoal      :#585a57;
+$grey-white    :#dbe0e0;
+
+// PALETTES
+$color-palettes: (
+grey: (
+		xx-light: lighten($grey, 45%),
+		x-light: lighten($grey, 35%),
+		base: $grey,
+		x-dark: darken($grey, 35%),
+		xx-dark: darken($grey, 45%),
+	)
+);
+
+// ===============================================
+// =================BREAKPOINTS===================
+$brkpoint-sm      : 1px;
+$brkpoint-md      : 768px;
+$brkpoint-lg      : 1100px;
+
+// ===============================================
+// =================IMG PATHS=====================
+$path-img   :  '../images';

@@ -1,0 +1,53 @@
+.img {
+  // Down arrow for smooth scrolling
+  @include m(down-arrow) {
+    cursor: pointer;
+  }
+
+  // Profile image of me
+  @include m(profile) {
+    width: em(300px);
+    border: 3px solid white;
+    border-radius: 50%;
+  }
+
+  // Each project image in carousel
+  @include m(project) {
+    width: 80%;
+    height: em(350px);
+    margin: 0 auto;
+    box-shadow: 10px 10px 10px rgba(25, 30, 31, 0.25), 0 10px 10px rgba(25, 30, 31, 0.25);
+  }
+
+  // Next arrow for carousel
+  @include m(next) {
+    @extend %previous-next-arrow-width;
+  }
+
+  // Previous arrow for carousel
+  @include m(previous) {
+    @extend %previous-next-arrow-width;
+  }
+}
+
+
+.previous,
+.next {
+  width: 50px;
+  // position: relative;
+  // opacity: .6;
+}
+
+// .previous {
+//   position: relative;
+//   bottom: 370px;
+//   right: 370px;
+// }
+
+// .next {
+//   position: relative;
+//   bottom: 370px;
+//   left: 370px;
+// }
+
+

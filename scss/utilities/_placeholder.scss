@@ -1,0 +1,67 @@
+// =============== HELPERS ======================//
+
+// Border radius
+%br {
+    border-radius: em(5px);
+}
+
+// Remove underline from links
+%text-dec-none {
+    text-decoration: none;
+}
+
+// Margin auto
+%margin-auto {
+    margin: 0 auto;
+}
+
+// Header styles for each card
+%card-section-header {
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+  color: $white;
+  width: 100%;
+  padding: 60px 0;
+  margin: 0;
+  text-align: center;
+
+  @include mq(medium) {
+    font-size: 60px;
+  }
+}
+
+// Before and after symbol for
+// about, work, and contact header
+%header-band-before {
+  display: inline-block;
+  margin: 0 20px 13px 0;
+  height: 3px;
+  content: " ";
+  text-shadow: none;
+  background-color: $white;
+  width: 50px;
+
+  @include mq(medium) {
+    width: 140px;
+    margin-bottom: 20px;
+  }
+}
+
+%header-band-after {
+  display: inline-block;
+  margin: 0 0 13px 20px;
+  height: 3px;
+  content: " ";
+  text-shadow: none;
+  background-color: $white;
+  width: 50px;
+
+  @include mq(medium) {
+    width: 140px;
+    margin-bottom: 20px;
+  }
+}
+
+%previous-next-arrow-width {
+  width: em(50px);
+}
