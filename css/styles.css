@@ -522,11 +522,7 @@ a {
       width: 40%; } }
 
 .learn-more-container {
-  display: none;
   margin-top: 70px; }
-  @media (min-width: 768px) {
-    .learn-more-container {
-      display: block; } }
   .learn-more-container h3 {
     font-size: 0.875em;
     font-weight: 100;

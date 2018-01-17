@@ -111,11 +111,7 @@
 }
 
 .learn-more-container {
-  display: none;
   margin-top: 70px;
-  @include mq(medium) {
-    display: block;
-  }
 
   h3 {
     font-size: em(14px);
