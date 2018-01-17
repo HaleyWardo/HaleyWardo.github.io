@@ -1,4 +1,4 @@
-const carouselContainer = document.querySelector(".carousel");
+const carouselContainer = document.querySelector(".carousel__container");
 const previewContainer = document.querySelector(".preview-buttons");
 let selectedIndex = 0;
 
@@ -63,12 +63,16 @@ const displayProject = (project) => {
   selectedIndex = projects.indexOf(project);
 
   let projectElement =
-  `<img class="img--project" src=${project.src} alt=${project.alt} />
-    <ul class="skill__list">
-    ${project.skills.map(skill => `<li class="skill">${skill}</li>`).join('\n')}
-    </ul>
-    <h2 class="skill__title">${project.title}</h2>
-    <p class="skill__description">${project.description}`;
+   `<div class="carousel">
+      <img class="img--project" src=${project.src} alt=${project.alt} />
+      <ul class="skill__list">
+        ${project.skills.map(skill => `<li class="skill">${skill}</li>`).join('\n')}
+      </ul>
+      <h2 class="skill__title">${project.title}</h2>
+      <p class="skill__description">${project.description}</p>
+      <img class="img--previous" src="./images/arrow.svg" alt="left arrow" />
+      <img class="img--next" src="./images/arrow.svg" alt="right arrow" />
+    </div>`;
 
   carouselContainer.innerHTML = projectElement;
 };

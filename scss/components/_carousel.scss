@@ -1,7 +1,6 @@
 .carousel {
-  // padding-bottom: em(100px);
-  background-color: $light-blue;
-  color: $charcoal;
+  position: relative;
+  display: inline-block;
 }
 
 // Skill pills for project skills
@@ -9,14 +8,14 @@
 .skill {
   font-size: em(14px);
   border-radius: em(50px);
-  margin: em(20px) em(10px) em(20px) 0;
+  margin: em(20px) em(10px) 0 0;
   padding: em(10px);
   background-color: $grey;
   color:white;
 
   @include e(list) {
     padding-left: 0;
-    @include flex(flex, row, $just: center);
+    @include flex(flex, row, $just: center, $wrap: wrap);
   }
 
   @include e(description) {

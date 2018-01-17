@@ -14,24 +14,39 @@
   // Each project image in carousel
   @include m(project) {
     width: 80%;
-    height: em(350px);
+    height: em(150px);
     margin: 0 auto;
-    box-shadow: 10px 10px 10px rgba(25, 30, 31, 0.25), 0 10px 10px rgba(25, 30, 31, 0.25);
+    box-shadow:  0 10px 10px rgba(25, 30, 31, 0.25);
+
+    @include mq (medium) {
+      height: em(350px);
+    }
   }
 
   // Next arrow for carousel
   @include m(next) {
     @extend %previous-next-arrow-width;
-    position: relative;
-    bottom: 500px;
-    left: 400px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    @include mq(medium) {
+      top: 150px;
+      right: 53px;
+    }
   }
 
   // Previous arrow for carousel
   @include m(previous) {
     @extend %previous-next-arrow-width;
-    position: relative;
-    bottom: 500px;
-    right: 400px;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 50px;
+    left: 0;
+
+    @include mq(medium) {
+      top: 150px;
+      left: 50px;
+    }
   }
 }

@@ -42,6 +42,7 @@ body {
 // Work section
 .work {
   background-color: $light-blue;
+  color: $charcoal;
 
   @include e(header) {
     @extend %card-section-header;
@@ -57,11 +58,13 @@ body {
       background-color: $charcoal;
     }
   }
+}
 
-  .preview-buttons {
-    a {
-      padding-right: em(15px);
-    }
+.preview-buttons {
+  padding-top: em(20px);
+  padding-bottom: em(70px);
+  a {
+    padding-right: em(15px);
   }
 }
 
