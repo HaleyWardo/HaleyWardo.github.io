@@ -41,16 +41,17 @@
   }
 
   // Nav list and items
-  @include e(menu) {
+  @include e(header-list) {
     padding-left: 0;
     display: none;
-    @include mq(medium) {
-      @include flex(flex, row, $just: center);
+
+    li {
+      cursor: pointer;
+      padding-left: em(20px);
     }
 
-    a {
-      color: $white;
-      padding-left: em(20px);
+    @include mq(medium) {
+      @include flex(flex, row, $just: center);
     }
   }
 
@@ -60,7 +61,7 @@
   @include e(footer) {
     background-color: $grey-white;
     color: $charcoal;
-    font-size: em(13px);
+    font-size: em(14px);
     padding: em(10px) em(20px);
     @include flex(flex, $align: center, $just: space-between);
   }
@@ -68,18 +69,20 @@
   @include e(footer-list) {
     @include flex(flex, row);
 
-    a {
+    li {
       display: none;
       color: $charcoal;
       padding-left: em(20px);
+      cursor: pointer;
       @include mq(medium) {
         display: inline;
       }
     }
 
     // Back to top link
-    .hidden {
+    #back-to-top {
       display: inline;
+      text-transform: uppercase;
       @include mq(medium) {
         display: none;
       }

@@ -12,17 +12,17 @@
 
 <body>
   <header class="header">
-    <nav role="navigation" class="nav__main">
+    <nav class="nav__main">
       <div class="nav__name">
         <p>Haley</p>
         <p class="format-last-name">Ward</p>
       </div>
 
-      <ul class="nav__menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="nav__header-list">
+        <li class="home-nav">Home</li>
+        <li class="about-nav">About</li>
+        <li class="work-nav">Work</li>
+        <li class="contact-nav">Contact</li>
       </ul>
     </nav>
 
@@ -33,7 +33,12 @@
 
     <section class="learn-more-container">
       <h3>LEARN MORE ABOUT ME</h3>
-      <img class="img--down-arrow" src="./images/down-arrow.svg" alt="" />
+
+      <svg class="img--down-arrow" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="235.661 638.266 643.467 643.468">
+        <path fill="white" d="M557.395 638.266c-177.689 0-321.734 144.045-321.734 321.734s144.045 321.734 321.734 321.734S879.128 1137.689 879.128 960 735.083 638.266 557.395 638.266zm0 607.47c-157.807 0-285.736-127.928-285.736-285.736s127.928-285.736 285.736-285.736S843.13 802.193 843.13 960s-127.928 285.736-285.735 285.736z"/>
+        <path fill="white" d="M417.165 871.526c4.701 0 9.4 1.787 12.993 5.38l127.226 127.235L684.61 876.906c7.177-7.177 18.802-7.177 25.977 0 7.177 7.177 7.177 18.791 0 25.96l-140.209 140.228c-7.177 7.177-18.81 7.177-25.977 0l-140.2-140.228c-7.177-7.177-7.177-18.783 0-25.96 3.565-3.583 8.255-5.38 12.964-5.38z"/>
+      </svg>
+
     </section>
   </header>
 
@@ -45,7 +50,7 @@
 
       <div class="about__info">
         <p>Web developement is a passion of mine.  I enjoy making my websites beautiful and usable.</p>
-        <p>I recently finished the Front-End Web Development Tech Degree with <a href='https://teamtreehouse.com'><strong><em>Team Treehouse</em></a></strong>. I have over 100+ peer reviews, which has helped me retain what I've learned.</p>
+        <p>I recently finished the Front-End Web Development Tech Degree with <a href='https://teamtreehouse.com'><strong><em>Team Treehouse</em></strong></a>. I have over 100+ peer reviews, which has helped me retain what I've learned and help other students in the process.</p>
         <p>I am located in Dallas, Texas, but my services are avaiable to all. If you are interested in speaking with me, please feel free to <a href="#contact"><strong><em>contact</em></strong></a> me.</p>
       </div>
     </section>
@@ -124,14 +129,14 @@
   </main>
 
   <footer>
-    <nav role="navigation" class="nav__footer">
+    <nav class="nav__footer">
       <span>COPYRIGHT &copy;</span>
       <ul class="nav__footer-list">
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a class="hidden" href="#">Back to top</a></li>
+        <li class="home-nav">Home</li>
+        <li class="about-nav">About</li>
+        <li class="work-nav">Work</li>
+        <li class="contact-nav">Contact</li>
+        <li id="back-to-top">Back to top</li>
       </ul>
     </nav>
   </footer>

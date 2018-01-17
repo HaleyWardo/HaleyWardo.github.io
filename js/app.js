@@ -1,6 +1,15 @@
+// Carousel variables
 const carouselContainer = document.querySelector(".carousel__container");
 const previewContainer = document.querySelector(".preview-buttons");
 let selectedIndex = 0;
+
+// Navigation variables
+const home = document.querySelectorAll(".home-nav");
+const about = document.querySelectorAll(".about-nav");
+const work = document.querySelectorAll(".work-nav");
+const contact = document.querySelectorAll(".contact-nav");
+const downArrow = document.querySelector(".img--down-arrow");
+const backToTop = document.querySelector("#back-to-top");
 
 const projects = [
   {
@@ -97,19 +106,49 @@ window.addEventListener("click", (e) => {
     }
       return displayProject(projects[selectedIndex - 1 ]);
   }
+});
 
-  // When arrow is clicked windows scrolls to about section
-  if (e.target.className === "img--down-arrow") {
+ // When arrow is clicked windows scrolls to about section
+for (let i = 0; i < home.length; i++) {
+  home[i].addEventListener("click", () => {
+    document.querySelector("header").scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+}
+
+for (let i = 0; i < about.length; i++) {
+  about[i].addEventListener("click", () => {
     document.querySelector("#about").scrollIntoView({
       behavior: "smooth"
     });
-  }
+  });
+}
 
-  // if (e.target.className === "hidden") {
-  //   document.querySelector("#top").scrollIntoView({
-  //     behavior: "smooth"
-  //   });
-  // }
-});
+for (let i = 0; i < work.length; i++) {
+  work[i].addEventListener("click", () => {
+    document.querySelector("#work").scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+}
 
+for (let i = 0; i < contact.length; i++) {
+  contact[i].addEventListener("click", () => {
+    document.querySelector("#contact").scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+}
 
+backToTop.addEventListener("click", () => {
+  document.querySelector("header").scrollIntoView({
+    behavior: "smooth"
+  });
+})
+
+downArrow.addEventListener("click", () => {
+  document.querySelector("#about").scrollIntoView({
+    behavior: "smooth"
+  });
+})
