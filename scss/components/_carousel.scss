@@ -8,7 +8,7 @@
 // on each project for Treehouse
 .skill {
   font-size: em(14px);
-  border-radius: 10px;
+  border-radius: em(50px);
   margin: em(20px) em(10px) em(20px) 0;
   padding: em(10px);
   background-color: $grey;
@@ -22,5 +22,9 @@
   @include e(description) {
     padding: 0 em(60px);
     height: 100px;
+
+    @include mq(medium) {
+      height: 50px;
+    }
   }
 }

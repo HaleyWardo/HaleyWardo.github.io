@@ -559,20 +559,19 @@ body {
       background-color: #585a57; }
     .work__header:after {
       background-color: #585a57; }
+  .work .preview-buttons a {
+    padding-right: 0.9375em; }
 
 .contact {
   background-color: #585a57;
   color: #FFF;
   padding-bottom: 4.375em; }
-  .contact__info .email {
-    margin-bottom: 3.75em; }
-    .contact__info .email a {
-      color: #FFF;
-      padding-left: 5px; }
   .contact__info a {
-    padding-right: 15px; }
+    padding-right: 0.9375em; }
   .contact__info p {
     margin-top: 0; }
+  .contact__social {
+    padding-top: 1.875em; }
 
 .img--down-arrow {
   cursor: pointer; }
@@ -585,10 +584,14 @@ body {
   height: 21.875em;
   margin: 0 auto;
   box-shadow: 10px 10px 10px rgba(25, 30, 31, 0.25), 0 10px 10px rgba(25, 30, 31, 0.25); }
-
-.previous,
-.next {
-  width: 50px; }
+.img--next {
+  position: relative;
+  bottom: 500px;
+  left: 400px; }
+.img--previous {
+  position: relative;
+  bottom: 500px;
+  right: 400px; }
 
 .carousel {
   background-color: #ade1e8;
@@ -596,7 +599,7 @@ body {
 
 .skill {
   font-size: 0.875em;
-  border-radius: 10px;
+  border-radius: 3.125em;
   margin: 1.25em 0.625em 1.25em 0;
   padding: 0.625em;
   background-color: #808080;
@@ -609,5 +612,8 @@ body {
   .skill__description {
     padding: 0 3.75em;
     height: 100px; }
+    @media (min-width: 768px) {
+      .skill__description {
+        height: 50px; } }
 
 /*# sourceMappingURL=styles.css.map */

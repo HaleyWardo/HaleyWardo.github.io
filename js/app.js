@@ -1,4 +1,5 @@
-const carouselContainer = document.querySelector('.carousel');
+const carouselContainer = document.querySelector(".carousel");
+const previewContainer = document.querySelector(".preview-buttons");
 let selectedIndex = 0;
 
 const projects = [
@@ -64,7 +65,7 @@ const displayProject = (project) => {
   let projectElement =
   `<img class="img--project" src=${project.src} alt=${project.alt} />
     <ul class="skill__list">
-    ${project.skills.map(skill => `<li class="skill">${skill}</li>`).join('\n      ')}
+    ${project.skills.map(skill => `<li class="skill">${skill}</li>`).join('\n')}
     </ul>
     <h2 class="skill__title">${project.title}</h2>
     <p class="skill__description">${project.description}`;
@@ -73,19 +74,20 @@ const displayProject = (project) => {
 };
 displayProject(projects[selectedIndex]);
 
+
 // Event listener for arrow clicks.
 // When index is more than link than it will go back to index[0].
 // When index is less than [0] it will go back to projects.length.
-window.addEventListener('click', (e) => {
+window.addEventListener("click", (e) => {
 
-  if (e.target.className === 'img--next') {
+  if (e.target.className === "img--next") {
     if (selectedIndex === projects.length - 1) {
       return displayProject(projects[0]);
     }
     return displayProject(projects[selectedIndex + 1 ]);
   }
 
-  if (e.target.className === 'img--previous') {
+  if (e.target.className === "img--previous") {
     if (selectedIndex === 0 ) {
       return displayProject(projects[projects.length - 1 ]);
     }
@@ -93,10 +95,11 @@ window.addEventListener('click', (e) => {
   }
 
   // When arrow is clicked windows scrolls to about section
-  if (e.target.className === 'img--down-arrow') {
-    document.querySelector('#about').scrollIntoView({
-      behavior: 'smooth'
+  if (e.target.className === "img--down-arrow") {
+    document.querySelector("#about").scrollIntoView({
+      behavior: "smooth"
     });
   }
 });
+
 
