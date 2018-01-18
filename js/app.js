@@ -1,6 +1,8 @@
 // Carousel variables
 const carouselContainer = document.querySelector(".carousel__container");
 const previewContainer = document.querySelector(".preview-buttons");
+const demoProjectLink = document.querySelector("#demo-project");
+const repoProjectLink = document.querySelector("#github-project");
 let selectedIndex = 0;
 
 // Navigation variables
@@ -17,6 +19,8 @@ const projects = [
     alt: "project 5",
     title: "Build a Web Style Guide",
     description: "Learned the fundamentals of Sass. I created a style guide from the ground up using variables, mixins, and functions.",
+    demo: "./projects/project-5/index.html",
+    repo: "https://github.com/HaleyWardo/treehouse-build-a-web-style-guide",
     skills: [
       "HTML", "CSS", "Sass"
     ],
@@ -26,6 +30,8 @@ const projects = [
     alt: "project 6",
     title: "Interactive Video Player",
     description: "Used a video API and JavaScript to highlight the captions from the video as it was playing. Also, if the user selects a section of text, it will autoplay from the selection.",
+    demo: "./projects/project-6/index.html",
+    repo: "https://github.com/HaleyWardo/treehouse-interactive-video-project",
     skills: [
       "HTML", "CSS", "JavaScript", "JQuery"
     ],
@@ -35,6 +41,8 @@ const projects = [
     alt: "project 8",
     title: "SVG Animations",
     description: "Learned how to modify styles on SVG's and animate them. Incorporated CSS transitions and transforms into the project.",
+    demo: "./projects/project-8/index.html",
+    repo: "https://github.com/HaleyWardo/treehouse-svg-animations",
     skills: [
       "HTML", "CSS", "SVG"
     ],
@@ -44,6 +52,8 @@ const projects = [
     alt: "project 9",
     title: "Web App Dashboard",
     description: "Used Chart.js to create line, bar, and pie charts. Used a random user API to generate random users. Used local storage to save user changes. Created modals for alert messages and notifications.",
+    demo: "./projects/project-9/index.html",
+    repo: "https://github.com/HaleyWardo/treehouse-web-app-dashboard",
     skills: [
       "HTML", "CSS", "SVG", "Sass", "AJAX", "JavaScript"
     ],
@@ -53,6 +63,8 @@ const projects = [
     alt: "project 10",
     title: "Employee Directory using Public API",
     description: "Used a random user API to generate random users and generate their details. Clicking a user would pop up a modal for additional information. Popup would include previous and next arrows to display the next member.",
+    demo: "./projects/project-10/index.html",
+    repo: "https://github.com/HaleyWardo/treehouse-public-API-For-Employee-Directory",
     skills: [
       "HTML", "CSS", "AJAX", "JavaScript"
     ],
@@ -62,6 +74,7 @@ const projects = [
     alt: "project 11",
     title: "Flickr Gallery with React",
     description: "Used React to create an app that interacts with the Flickr API. It displays images from the API based on user input or pre-defined options.",
+    repo: "https://github.com/HaleyWardo/treehouse-react-Flickr-Gallery",
     skills: [
       "HTML", "CSS", "Fetch", "JavaScript", "React"
     ],
@@ -82,8 +95,11 @@ const displayProject = (project) => {
       <img class="img--previous" src="./images/arrow.svg" alt="left arrow" />
       <img class="img--next" src="./images/arrow.svg" alt="right arrow" />
     </div>`;
-
   carouselContainer.innerHTML = projectElement;
+
+  demoProjectLink.setAttribute("href", project.demo);
+  repoProjectLink.setAttribute("href", project.repo);
+
 };
 displayProject(projects[selectedIndex]);
 
