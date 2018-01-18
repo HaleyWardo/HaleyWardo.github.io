@@ -106,7 +106,7 @@ displayProject(projects[selectedIndex]);
 
 
 // Event listener for arrow clicks.
-// When index is more than link than it will go back to index[0].
+// When index is more than link then it will go back to index[0].
 // When index is less than [0] it will go back to projects.length.
 window.addEventListener("click", (e) => {
 
@@ -118,14 +118,14 @@ window.addEventListener("click", (e) => {
   }
 
   if (e.target.className === "svg--previous") {
-    if (selectedIndex === 0 ) {
+    if (selectedIndex === 0) {
       return displayProject(projects[projects.length - 1 ]);
     }
-      return displayProject(projects[selectedIndex - 1 ]);
+    return displayProject(projects[selectedIndex - 1 ]);
   }
 });
 
- // When arrow is clicked windows scrolls to about section
+ // When arrow is clicked window scrolls to selected section
 for (let i = 0; i < home.length; i++) {
   home[i].addEventListener("click", () => {
     document.querySelector("header").scrollIntoView({

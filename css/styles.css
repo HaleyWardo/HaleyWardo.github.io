@@ -444,7 +444,7 @@ a {
   cursor: pointer; }
 
 .header {
-  background-image: url("../images/background.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.63), rgba(26, 26, 26, 0.65), transparent), url("../images/background.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 100vh; }
@@ -457,7 +457,7 @@ a {
       flex-direction: row;
       justify-content: space-between; } }
 .nav__name {
-  font-family: 'Amatic SC', cursive;
+  font-family: "Amatic SC", cursive;
   font-weight: 700;
   font-size: 1.875em;
   color: #ade1e8;
@@ -515,7 +515,7 @@ a {
 .developer-container .developer-heading {
   min-width: 275px;
   width: 40%;
-  font-family: 'Amatic SC', cursive;
+  font-family: "Amatic SC", cursive;
   font-weight: bold;
   font-size: 3.75em;
   color: #ade1e8;
@@ -538,7 +538,7 @@ a {
     margin-bottom: 0.625em; }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   text-align: center;
   box-shadow: 10px 10px 10px rgba(25, 30, 31, 0.25), 0 10px 10px rgba(25, 30, 31, 0.25), -10px 10px 10px rgba(25, 30, 31, 0.25);
   color: #FFF;
