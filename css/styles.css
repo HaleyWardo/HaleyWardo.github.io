@@ -600,6 +600,7 @@ body {
   box-shadow: 0 10px 10px rgba(25, 30, 31, 0.25); }
   @media (min-width: 768px) {
     .img--project {
+      max-width: 700px;
       height: 21.875em; } }
 
 .svg--down-arrow {
@@ -607,8 +608,12 @@ body {
 .svg--next {
   position: absolute;
   top: 50px;
-  right: 0; }
+  right: -13px; }
   @media (min-width: 768px) {
+    .svg--next {
+      top: 150px;
+      right: 30px; } }
+  @media (min-width: 1100px) {
     .svg--next {
       top: 150px;
       right: 53px; } }
@@ -616,8 +621,12 @@ body {
   transform: rotate(180deg);
   position: absolute;
   top: 50px;
-  left: 0; }
+  left: -13px; }
   @media (min-width: 768px) {
+    .svg--previous {
+      top: 150px;
+      left: 30px; } }
+  @media (min-width: 1100px) {
     .svg--previous {
       top: 150px;
       left: 50px; } }

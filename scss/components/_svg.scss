@@ -9,9 +9,14 @@
     @extend %previous-next-arrow-width;
     position: absolute;
     top: 50px;
-    right: 0;
+    right: -13px;
 
     @include mq(medium) {
+      top: 150px;
+      right: 30px;
+    }
+
+    @include mq(large) {
       top: 150px;
       right: 53px;
     }
@@ -23,9 +28,14 @@
     transform: rotate(180deg);
     position: absolute;
     top: 50px;
-    left: 0;
+    left: -13px;
 
     @include mq(medium) {
+      top: 150px;
+      left: 30px;
+    }
+
+    @include mq(large) {
       top: 150px;
       left: 50px;
     }

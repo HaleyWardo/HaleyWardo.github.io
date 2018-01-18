@@ -8,12 +8,12 @@
 
   // Each project image in carousel
   @include m(project) {
-    // width: 80%;
     height: em(150px);
     margin: 0 auto;
     box-shadow:  0 10px 10px rgba(25, 30, 31, 0.25);
 
     @include mq (medium) {
+      max-width: 700px;
       height: em(350px);
     }
   }
