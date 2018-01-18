@@ -634,7 +634,8 @@ body {
 
 .carousel {
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+  width: 100%; }
 
 .skill {
   font-size: 0.875em;
