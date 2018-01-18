@@ -88,13 +88,13 @@ const displayProject = (project) => {
   let projectElement =
    `<div class="carousel">
       <img class="img--project" src=${project.src} alt=${project.alt} />
+      <img class="svg--previous" src="./images/arrow.svg" alt="left arrow" />
+      <img class="svg--next" src="./images/arrow.svg" alt="right arrow" />
       <ul class="skill__list">
         ${project.skills.map(skill => `<li class="skill">${skill}</li>`).join('\n')}
       </ul>
       <h2 class="skill__title">${project.title}</h2>
       <p class="skill__description">${project.description}</p>
-      <img class="svg--previous" src="./images/arrow.svg" alt="left arrow" />
-      <img class="svg--next" src="./images/arrow.svg" alt="right arrow" />
     </div>`;
   carouselContainer.innerHTML = projectElement;
 
