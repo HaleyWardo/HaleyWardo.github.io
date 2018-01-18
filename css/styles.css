@@ -595,7 +595,8 @@ body {
   border: 3px solid white;
   border-radius: 50%; }
 .img--project {
-  height: 9.375em;
+  width: 80%;
+  height: auto;
   margin: 0 auto;
   box-shadow: 0 10px 10px rgba(25, 30, 31, 0.25); }
   @media (min-width: 768px) {
