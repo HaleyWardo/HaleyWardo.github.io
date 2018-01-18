@@ -61,8 +61,18 @@ body {
 }
 
 .preview-buttons {
+  @include flex(flex, $just: center, $align: center);
   padding-top: em(20px);
   padding-bottom: em(70px);
+
+  #demo-project {
+    padding-left: 0.9375em;
+  }
+
+  #github-project {
+    padding-left: 0.9375em;
+  }
+
   a {
     padding-right: em(15px);
   }

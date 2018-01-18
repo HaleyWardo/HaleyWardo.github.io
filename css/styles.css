@@ -567,8 +567,15 @@ body {
       background-color: #585a57; }
 
 .preview-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 1.25em;
   padding-bottom: 4.375em; }
+  .preview-buttons #demo-project {
+    padding-left: 0.9375em; }
+  .preview-buttons #github-project {
+    padding-left: 0.9375em; }
   .preview-buttons a {
     padding-right: 0.9375em; }
 
