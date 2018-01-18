@@ -10,7 +10,7 @@ const home = document.querySelectorAll(".home-nav");
 const about = document.querySelectorAll(".about-nav");
 const work = document.querySelectorAll(".work-nav");
 const contact = document.querySelectorAll(".contact-nav");
-const downArrow = document.querySelector(".img--down-arrow");
+const downArrow = document.querySelector(".svg--down-arrow");
 const backToTop = document.querySelector("#back-to-top");
 
 const projects = [
