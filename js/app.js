@@ -75,6 +75,7 @@ const projects = [
     title: "Flickr Gallery with React",
     description: "Used React to create an app that interacts with the Flickr API. It displays images from the API based on user input or pre-defined options.",
     repo: "https://github.com/HaleyWardo/treehouse-react-Flickr-Gallery",
+    demo: "https://github.com/HaleyWardo/treehouse-react-Flickr-Gallery/blob/master/README.md",
     skills: [
       "HTML", "CSS", "Fetch", "JavaScript", "React"
     ],
@@ -92,8 +93,8 @@ const displayProject = (project) => {
       </ul>
       <h2 class="skill__title">${project.title}</h2>
       <p class="skill__description">${project.description}</p>
-      <img class="img--previous" src="./images/arrow.svg" alt="left arrow" />
-      <img class="img--next" src="./images/arrow.svg" alt="right arrow" />
+      <img class="svg--previous" src="./images/arrow.svg" alt="left arrow" />
+      <img class="svg--next" src="./images/arrow.svg" alt="right arrow" />
     </div>`;
   carouselContainer.innerHTML = projectElement;
 
@@ -109,14 +110,14 @@ displayProject(projects[selectedIndex]);
 // When index is less than [0] it will go back to projects.length.
 window.addEventListener("click", (e) => {
 
-  if (e.target.className === "img--next") {
+  if (e.target.className === "svg--next") {
     if (selectedIndex === projects.length - 1) {
       return displayProject(projects[0]);
     }
     return displayProject(projects[selectedIndex + 1 ]);
   }
 
-  if (e.target.className === "img--previous") {
+  if (e.target.className === "svg--previous") {
     if (selectedIndex === 0 ) {
       return displayProject(projects[projects.length - 1 ]);
     }

@@ -48,6 +48,11 @@
     li {
       cursor: pointer;
       padding-left: em(20px);
+
+      &:hover {
+        color: $light-blue;
+        transition: .8s;
+      }
     }
 
     @include mq(medium) {
@@ -76,6 +81,11 @@
       cursor: pointer;
       @include mq(medium) {
         display: inline;
+      }
+
+      &:hover {
+        color: $black;
+        transition: .7s;
       }
     }
 

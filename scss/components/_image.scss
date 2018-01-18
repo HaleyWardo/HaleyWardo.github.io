@@ -1,9 +1,4 @@
 .img {
-  // Down arrow for smooth scrolling
-  @include m(down-arrow) {
-    cursor: pointer;
-  }
-
   // Profile image of me
   @include m(profile) {
     width: em(300px);
@@ -20,33 +15,6 @@
 
     @include mq (medium) {
       height: em(350px);
-    }
-  }
-
-  // Next arrow for carousel
-  @include m(next) {
-    @extend %previous-next-arrow-width;
-    position: absolute;
-    top: 50px;
-    right: 0;
-
-    @include mq(medium) {
-      top: 150px;
-      right: 53px;
-    }
-  }
-
-  // Previous arrow for carousel
-  @include m(previous) {
-    @extend %previous-next-arrow-width;
-    transform: rotate(180deg);
-    position: absolute;
-    top: 50px;
-    left: 0;
-
-    @include mq(medium) {
-      top: 150px;
-      left: 50px;
     }
   }
 }
