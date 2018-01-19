@@ -1,11 +1,42 @@
+html {
+  @include mq(large) {
+    overflow: auto;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: fixed;
+      left: 0;
+      right: 0;
+      z-index: -1;
+
+      display: block;
+      background-image: linear-gradient(rgba(0, 0, 0, .63), rgba(26, 26, 26, .65), transparent), url("../images/background.jpg");
+      background-size:cover;
+      width: 100%;
+      height: 100%;
+
+      -webkit-filter: blur(4px);
+      -moz-filter: blur(4px);
+      -o-filter: blur(4px);
+      -ms-filter: blur(4px);
+      filter: blur(4px);
+    }
+  }
+}
+
+
 body {
   font-family: $raleway;
   text-align: center;
-  box-shadow: 10px 10px 10px rgba(25, 30, 31, 0.25), 0 10px 10px rgba(25, 30, 31, 0.25), -10px 10px 10px rgba(25, 30, 31, 0.25);
   color: $white;
   min-width: 345px;
   max-width: 1024px;
   @extend %margin-auto;
+
+  @include mq(large) {
+    box-shadow: 10px 10px 10px rgba(25, 30, 31, 0.25), 0 10px 10px rgba(25, 30, 31, 0.25), -10px 10px 10px rgba(25, 30, 31, 0.25);
+  }
 }
 
 // About section

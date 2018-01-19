@@ -9,7 +9,7 @@
     @extend %previous-next-arrow-width;
     position: absolute;
     top: 50px;
-    right: -13px;
+    right: 0px;
 
     @include mq(medium) {
       top: 150px;
@@ -28,7 +28,7 @@
     transform: rotate(180deg);
     position: absolute;
     top: 50px;
-    left: -13px;
+    left: 0px;
 
     @include mq(medium) {
       top: 150px;
