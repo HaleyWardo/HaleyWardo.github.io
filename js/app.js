@@ -6,10 +6,6 @@ const repoProjectLink = document.querySelector("#github-project");
 let selectedIndex = 0;
 
 // Navigation variables
-const home = document.querySelectorAll(".home-nav");
-const about = document.querySelectorAll(".about-nav");
-const work = document.querySelectorAll(".work-nav");
-const contact = document.querySelectorAll(".contact-nav");
 const downArrow = document.querySelector(".svg--down-arrow");
 const backToTop = document.querySelector("#back-to-top");
 
@@ -108,7 +104,7 @@ displayProject(projects[selectedIndex]);
 // Event listener for arrow clicks.
 // When index is more than link then it will go back to index[0].
 // When index is less than [0] it will go back to projects.length.
-window.addEventListener("click", (e) => {
+carouselContainer.addEventListener("click", (e) => {
 
   if (e.target.className === "svg--next") {
     if (selectedIndex === projects.length - 1) {
@@ -126,46 +122,40 @@ window.addEventListener("click", (e) => {
 });
 
  // When arrow is clicked window scrolls to selected section
-for (let i = 0; i < home.length; i++) {
-  home[i].addEventListener("click", () => {
+window.addEventListener("click", (e) => {
+  if (e.target.className === "home-nav") {
     document.querySelector("header").scrollIntoView({
       behavior: "smooth"
     });
-  });
-}
+  }
 
-for (let i = 0; i < about.length; i++) {
-  about[i].addEventListener("click", () => {
+  if (e.target.className === "about-nav") {
     document.querySelector("#about").scrollIntoView({
       behavior: "smooth"
     });
-  });
-}
+  }
 
-for (let i = 0; i < work.length; i++) {
-  work[i].addEventListener("click", () => {
+  if (e.target.className === "work-nav") {
     document.querySelector("#work").scrollIntoView({
       behavior: "smooth"
     });
-  });
-}
+  }
 
-for (let i = 0; i < contact.length; i++) {
-  contact[i].addEventListener("click", () => {
+  if (e.target.className === "contact-nav") {
     document.querySelector("#contact").scrollIntoView({
       behavior: "smooth"
     });
-  });
-}
+  }
+});
 
 backToTop.addEventListener("click", () => {
   document.querySelector("header").scrollIntoView({
     behavior: "smooth"
   });
-})
+});
 
 downArrow.addEventListener("click", () => {
   document.querySelector("#about").scrollIntoView({
     behavior: "smooth"
   });
-})
+});
