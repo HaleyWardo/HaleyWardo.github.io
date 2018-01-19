@@ -614,12 +614,9 @@ body {
     padding-top: 1.875em; }
 
 .img--profile {
-  width: 14.75em;
+  width: 18.75em;
   border: 3px solid white;
   border-radius: 50%; }
-  @media (min-width: 768px) {
-    .img--profile {
-      width: 18.75em; } }
 .img--project {
   width: 80%;
   height: auto;

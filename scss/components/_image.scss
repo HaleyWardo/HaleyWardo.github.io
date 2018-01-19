@@ -1,13 +1,9 @@
 .img {
   // Profile image of me
   @include m(profile) {
-    width: 14.75em;
+    width: em(300px);
     border: 3px solid white;
     border-radius: 50%;
-
-    @include mq(medium) {
-      width: em(300px);
-    }
   }
 
   // Each project image in carousel
