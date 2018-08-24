@@ -58,6 +58,13 @@ body {
   @include e(info) {
     padding: em(50px) em(40px);
     line-height: 1.8;
+    width: 95%;
+    margin: 0 auto;
+    text-align: left;
+
+    @include mq(medium) {
+      width: 75%;
+    }
 
     a {
       color: $white;

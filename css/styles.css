@@ -572,7 +572,13 @@ body {
   background-color: #933e3d; }
   .about__info {
     padding: 3.125em 2.5em;
-    line-height: 1.8; }
+    line-height: 1.8;
+    width: 95%;
+    margin: 0 auto;
+    text-align: left; }
+    @media (min-width: 768px) {
+      .about__info {
+        width: 75%; } }
     .about__info a {
       color: #FFF; }
     .about__info p {
